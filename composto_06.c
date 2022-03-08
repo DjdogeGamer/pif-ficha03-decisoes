@@ -2,12 +2,13 @@
 
 int main()
 {
-    float wage, inst;
+    double wage, inst;
 
     printf("Insira o salario e a prestacao => ");
-    scanf("%f%f", &wage, &inst);
+    scanf("%lf%lf", &wage, &inst);
 
-    if (inst >= wage * 0.3)
+    // Verifica se installment e maior que 30% do salario
+    if (inst > wage * 0.3)
     {
         printf("Nao pode");
     }
